@@ -30,6 +30,17 @@
       width: 100%;
       text-align: center;
     }
+    #crazy {
+      animation: rotation 5s infinite linear;
+    }
+    @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+    }
   </style>
 </head>
 <body>
@@ -39,6 +50,7 @@
   <img src="john-wick.gif" alt="John Wick gif">
   <button id="quote">Request a Quote</button>
   <button id="darkMode">Toggle Dark Mode</button>
+  <img id="crazy" src="crazy.gif" alt="Crazy gif">
 
   <footer>© 2025 All rights reserved.</footer>
 
